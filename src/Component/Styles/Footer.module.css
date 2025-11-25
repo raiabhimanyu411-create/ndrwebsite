@@ -1,0 +1,118 @@
+.footer {
+  background: #0d2859;
+  color: white;
+  padding: 50px 60px 20px;
+}
+
+.container {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 40px;
+  padding-bottom: 40px;
+  max-width: 84rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.left {
+  width: 40%;
+}
+
+.logoboxfooter {
+  width: 5rem;
+
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 2px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ministry {
+  margin-top: 2px;
+  font-size: 13px;
+  opacity: .9;
+}
+
+.desc {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: .85;
+}
+
+.middle
+{
+    display: flex;
+    gap: 0px 2.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 3rem;
+}
+
+
+.right {
+  width: 25%;
+}
+
+.colTitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.middle ul, .right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.middle ul li,
+.right ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.addr {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: .85;
+}
+
+.social {
+  margin-top: 15px;
+}
+
+.social span {
+  font-size: 14px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 6px;
+  font-size: 22px;
+}
+
+.copy {
+ 
+  font-size: 13px;
+  opacity: .85;
+  /* border-top: 1px solid rgba(255,255,255,0.2); */
+  padding: 1rem 0px;
+  color: white;
+}
+
+
+.headingBlock
+{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 0px 2rem;
+}

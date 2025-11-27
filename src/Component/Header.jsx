@@ -1,0 +1,145 @@
+import React from "react";
+import ReactCountryFlag from "react-country-flag";
+import styles from "../Pages/Styles/Home.module.css";
+import Logo from "../assets/Images/Emblem.png";
+import { Link } from "react-router-dom";
+
+
+const Header = () => {
+  return (
+    <header className={styles.headerWrapper}>
+      {/* Top Blue Bar */}
+      <div className={styles.topBar}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "0px 0.8rem",
+          }}
+        >
+          <span>
+            An Official website of <strong>Government of India</strong>
+          </span>
+          <ReactCountryFlag
+            countryCode="IN"
+            svg
+            style={{ width: "2em", height: "2em" }}
+          />
+        </div>
+
+        <div className={styles.langBtn}>English</div>
+      </div>
+
+      {/* Main Header */}
+      <div className="container">
+        <div className={styles.mainHeader}>
+          <div className={styles.leftSection}>
+            <img src={Logo} alt="Government Emblem" className={styles.logo} />
+
+            <div>
+              <h2 className={styles.title}>National Data Repository</h2>
+              <p className={styles.subtitle}>
+                Directorate General of Hydrocarbons (DGH)
+              </p>
+              <p className={styles.ministry}>
+                Ministry of Petroleum and Natural Gas, Government of India
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Navigation */}
+      <div className="container">
+        <div className={styles.searchandnavbarbox}>
+          <nav className={styles.navBar}>
+            <div>
+              <a
+               href="/"
+               target="_blank"
+               
+               >
+                
+                Home</a>
+            </div>
+
+            <div>
+              <a
+                target="_blank"
+                href="/about"
+              >
+                About NDR
+              </a>
+            </div>
+
+            <div className={styles.dropdown}>
+              <a href="#">Related Pages ▾</a>
+
+              <div className={styles.dropdownContent}>
+                <a href="/Objective" target="_blank">
+                  Objective
+                </a>
+                <a href="/OperationalModel" target="_blank">
+                  Operational Model
+                </a>
+                <a href="/SalientFeatures" target="_blank">
+                  Salient Features
+                </a>
+                {/* <a href="https://www.oisd.gov.in/" target="_blank">
+                  Oil Industry Safety Directorate
+                </a> */}
+                {/* <a href="http://www.moef.gov.in/" target="_blank">
+                  Ministry of Environment, Forest and Climate Change
+                </a> */}
+                {/* <a href="http://dgms.gov.in/" target="_blank">
+                  Directorate General of Mines Safety
+                </a> */}
+                {/* <a href="http://ppac.org.in/" target="_blank">
+                  Petroleum Planning & Analysis Cell
+                </a> */}
+              </div>
+            </div>
+
+            <div>
+              <a
+                target="_blank"
+                href="/contact"
+              >
+                Contact
+              </a>
+            </div>
+          </nav>
+
+          <div className={styles.rightSection}>
+            <input
+              className={styles.search}
+              type="text"
+              placeholder="Search"
+            />
+            <button className={styles.loginBtn}>
+              <a
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+                href="https://www.ndrdgh.gov.in/NDRTWS/system/mainframe.asp"
+              >
+                Log in
+              </a>
+            </button>
+            <button className={styles.registerBtn}>
+              <a
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+                href="https://www.ndrdgh.gov.in/NDR/?page_id=1486"
+              >
+                Register
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

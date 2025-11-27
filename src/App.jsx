@@ -1,11 +1,24 @@
 import React from 'react'
-import Home from './Component/Home'
+import { Routes, Route } from "react-router-dom";
+import Home from './Pages/Home'
+import About from "./Pages/About";
+import Objective from "./Pages/Objective"
+import Contact from './Pages/Contact';
+import OperationalModel from './Pages/OperationalModel';
+import SalientFeatures from './Pages/SalientFeatures';
 import './App.css'
 
 export default function App() {
   return (
     <>
-    <Home/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/objective" element={<Objective />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/operationalModel" element={<OperationalModel />} />
+        <Route path="/salientFeatures" element={<SalientFeatures />} />
+      </Routes>
     </>
   )
 }

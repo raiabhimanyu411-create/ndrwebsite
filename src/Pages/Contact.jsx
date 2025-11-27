@@ -8,11 +8,12 @@ const Contact = () => {
     <>
       <Header />
 
-      <div className="contact-page">
+      <div className="continer">
+        <div className="contact-page">
         <div className="contact-container">
 
           <div className="contact-left">
-            <h2 className="section-heading">✤✤ Get In Touch / Feedback</h2>
+            <h2 className="section-heading"> Get In Touch / Feedback</h2>
 
             <p className="contact-desc">
               Please do share with us your views / suggestions in the form below
@@ -37,7 +38,7 @@ const Contact = () => {
               </div>
 
               <div className="form-group">
-                <label>Enter Captcha Code *</label>
+                <label>Enter Captcha *</label>
                 <div className="captcha-wrapper">
                   <img src="/captcha" alt="captcha" className="captcha-img" />
                   <input type="text" placeholder="Enter code" />
@@ -54,7 +55,7 @@ const Contact = () => {
           <div className="contact-right">
 
             <div className="info-box">
-              <h3>☷ DGH Location</h3>
+              <h3> DGH Location</h3>
 
               <div className="info-item">
                 <label>Address</label>
@@ -107,6 +108,10 @@ const Contact = () => {
 
         </div>
       </div>
+
+      </div>
+
+      
 
       <Footer />
     </>

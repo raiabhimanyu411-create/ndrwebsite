@@ -1,12 +1,12 @@
 /* Top Blue Bar */
 .topBar {
   background: #0d2859;
-  color: white;
+  /* color: white;
   padding: 6px 20px;
   font-size: 13px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 
 
@@ -656,4 +656,13 @@ padding-top: 35px;
 /* SHOW ON HOVER */
 .dropdown:hover .dropdownContent {
   display: block;
+}
+
+.navbarnew{
+  color: white;
+ 
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

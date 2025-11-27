@@ -9,25 +9,36 @@ const Header = () => {
     <header className={styles.headerWrapper}>
       {/* Top Blue Bar */}
       <div className={styles.topBar}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "0px 0.8rem",
-          }}
-        >
-          <span>
-            An Official website of <strong>Government of India</strong>
-          </span>
-          <ReactCountryFlag
-            countryCode="IN"
-            svg
-            style={{ width: "2em", height: "2em" }}
-          />
+
+        <div className="container">
+          <div className={styles.navbarnew}>
+            <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "0px 0.8rem",
+            }}
+          >
+            <span>
+              An Official website of <strong>Government of India</strong>
+            </span>
+            <ReactCountryFlag
+              countryCode="IN"
+              svg
+              style={{ width: "2em", height: "2em" }}
+            />
+
+           
+          </div>
+           <div className={styles.langBtn}>English</div>
+
+
+          </div>
+          
         </div>
 
-        <div className={styles.langBtn}>English</div>
+        {/* <div className={styles.langBtn}>English</div> */}
       </div>
 
       {/* Main Header */}

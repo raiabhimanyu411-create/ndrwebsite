@@ -26,9 +26,9 @@ export default function Footer() {
 
                             <div>
                                 <h2 className={styles.title}>National Data Repository</h2>
-                                <h4 className={styles.subtitle}>
+                                <div className={styles.subtitle}>
                                     Directorate General of Hydrocarbons (DGH)
-                                </h4>
+                                </div>
 
                                 <p className={styles.ministry}>
                                     Ministry of Petroleum and Natural Gas, Government of India

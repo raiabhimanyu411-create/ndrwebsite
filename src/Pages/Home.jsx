@@ -9,6 +9,7 @@ import Open from "../assets/Images/Open.png";
 import Footer from "../Component/Footer";
 
 import Header from "../Component/Header";
+import { Link } from "react-router-dom";
 
 const Home2 = () => {
   const cards = [
@@ -57,8 +58,13 @@ const Home2 = () => {
                 <button className={styles.exploreBtn}>
                   Explore Data <span>→</span>
                 </button>
+                <Link to="/researchInvest">
+                  <button className={styles.learnBtn}>Research and Invest in India</button>
+               
 
-                <button className={styles.learnBtn}>Research And Invest</button>
+                </Link>
+
+
               </div>
             </div>
 
@@ -79,7 +85,7 @@ const Home2 = () => {
         <div className={styles.dot}></div>
 
         <div className={styles.statItem}>
-          <IoCheckmarkCircle style={{ fontSize: "2rem",color: "green" }} />
+          <IoCheckmarkCircle style={{ fontSize: "2rem", color: "green" }} />
           <h3>X+ TB</h3>
           <p>Of seismic and well data</p>
         </div>

@@ -93,6 +93,7 @@
   border-radius: 6px;
   cursor: pointer;
   margin-left: 8px;
+  text-decoration: none;
 }
 
 .registerBtn {
@@ -103,6 +104,7 @@
   border-radius: 6px;
   cursor: pointer;
   margin-left: 8px;
+  text-decoration: none;
 }
 
 /* ======================================================
@@ -688,4 +690,28 @@
   justify-content: space-between;
   align-items: center;
   gap:0px 0.5rem;
+}
+
+.topRightButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.helpBtn {
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 4px 14px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.helpBtn:hover {
+  background: #ffffff;
+  color: #01355f;
 }

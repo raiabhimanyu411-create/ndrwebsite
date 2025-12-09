@@ -8,7 +8,7 @@ import { FiSearch } from "react-icons/fi";
 const Header = () => {
   return (
     <header className={styles.headerWrapper}>
-      
+
       {/* Top Bar */}
       <div className={styles.topBar}>
         <div className="container">
@@ -23,7 +23,17 @@ const Header = () => {
                 className={styles.flagIcon}
               />
             </div>
-            <button className={styles.langBtn}>English</button>
+            <div className={styles.topRightButtons}>
+              <Link to="/help" className={styles.helpBtn}>
+                Help
+              </Link>
+
+              <button className={styles.langBtn}>
+                <span className={styles.langIcon}>अ / A</span> English
+              </button>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -52,14 +62,14 @@ const Header = () => {
 
           <nav className={styles.navBar}>
             <div>
-    <Link to="/">Home</Link>
+              <Link to="/">Home</Link>
             </div>
 
             <div>
-   <Link to="/about">About NDR</Link>
+              <Link to="/about">About NDR</Link>
             </div>
-        
-         
+
+
 
             {/* Dropdown - Pages */}
             <div className={styles.dropdown}>
@@ -70,7 +80,6 @@ const Header = () => {
                 <Link to="/salientFeatures">Salient Features</Link>
                 <Link to="/policies">Policies</Link>
                 <Link to="/sedimentaryBasins">Sedimentary Basins</Link>
-                <Link to="/help">Help</Link>
               </div>
             </div>
 

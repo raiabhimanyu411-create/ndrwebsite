@@ -89,10 +89,10 @@ export default function Footer() {
                 </div>
 
                 {/* NEW GOVERNMENT INFO BLOCK */}
-                <div className={styles.extraInfo}>
+                {/* <div className={styles.extraInfo}>
                     <p>Content Owned by DGH and Powered by Halliburton</p>
                     <p>Next Gen NDR is hosted on Public Cloud</p>
-                </div>
+                </div> */}
 
             </footer>
 

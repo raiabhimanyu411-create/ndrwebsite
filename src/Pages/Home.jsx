@@ -47,13 +47,30 @@ const Home2 = () => {
           <section className={styles.hero}>
             <div className={styles.left}>
               <h1>National Data Repository</h1>
-              <h3>Come, Explore, Research & Invest</h3>
+              {/* <h3>Come, Explore, Research & Invest</h3> */}
 
-              <p>
+              {/* <p>
                 <strong>National Data Repository (NDR)</strong> was launched for
                 public on <strong>28th July 2017</strong>. NDR is a fully
                 Government of India owned E&P data repository.
-              </p>
+              </p> */}
+               <h3>Content Owned by DGH and Powered by Halliburton</h3>
+                 {/* <div>
+            Next Gen NDR is hosted on Public Cloud
+          </div> */}
+
+             <p>
+National Data Repository (NDR) is an integrated data repository of Exploration and Production (E&P) data of Indian sedimentary basins. National Data Repository (NDR) was launched for public on 28th July 2017. NDR is a fully Government of India owned E&P data repository. NDR is hosted at Directorate General of Hydrocarbons (DGH) Noida, Sector-73, UP 201301, India. DGH is a technical arm of the Ministry of Petroleum and Natural Gas (MoPNG). NDR offers an unique platform to all E&P Operators, E&P Service Companies, E&P Investors, Academia to delve inside diverse E&P datasets of Indian sedimentary basins.
+</p>
+
+
+
+
+
+
+  {/* <p></p> */}
+                    {/* <p>Next Gen NDR is hosted on Public Cloud</p> */}
+
 
               <div className={styles.buttons}>
                 <button className={styles.exploreBtn}>
@@ -117,8 +134,64 @@ const Home2 = () => {
         ))}
       </section>
 
+      {/* <div className="container">
+        <section className={styles.wrapper}>
+        
+          <div className={styles.leftbox}>
+            <h2>Data Categories</h2>
 
-      <NewsSection/>
+            <ol className={styles.list}>
+              <li>
+                Seismic data <span>›</span>
+              </li>
+              <li>
+                Well data <span>›</span>
+              </li>
+              <li>
+                Survey data <span>›</span>
+              </li>
+              <li>
+                Reports and studies <span>›</span>
+              </li>
+              <li>
+                GIS layers <span>›</span>
+              </li>
+              <li>
+                Data packages <span>›</span>
+              </li>
+            </ol>
+
+            <button className={styles.viewBtn}>
+              View All <span>›</span>
+            </button>
+          </div>
+
+        
+          <div className={styles.rightbox}>
+            <h2>Latest Announcements</h2>
+
+            <ul className={styles.annList}>
+              <li>
+                OALP Round Update – Bid submission deadline extended
+              </li>
+              <li>
+                New basin study report published for Cambay Basin
+              </li>
+              <li>Data package DP-32 now available</li>
+              <li>Scheduled maintenance notice</li>
+              <li>Updated data package DP-42</li>
+              <li>New well logs added</li>
+              <li>GIS layer enhancement</li>
+            </ul>
+
+            <button className={styles.viewBtn}>
+              View All <span>›</span>
+            </button>
+          </div>
+        </section>
+      </div> */}
+
+      <NewsSection />
 
       <div className="footerbackground">
         <div className="container">
@@ -127,7 +200,7 @@ const Home2 = () => {
 
             <div className={styles.content}>
               <h1>National Data Repository</h1>
-              <h3>Come, explore, research & invest</h3>
+              <h3>Next Gen NDR is hosted on Public Cloud</h3>
 
               <p>
                 Access India's authenticated E&P datasets including seismic,
@@ -137,11 +210,12 @@ const Home2 = () => {
               </p>
 
               <div className={styles.buttons}>
-                <button className={styles.exploreBtn}>
-                  Explore Data <span>→</span>
-                </button>
+                <Link to="/technologyBehindNDR"> <button className={styles.exploreBtn}>
+                  Technology Behind NDR <span>→</span>
+                </button> </Link>
+               
 
-                <button className={styles.learnBtn}>Learn more</button>
+                <button className={styles.learnBtn}>Our Policies</button>
               </div>
             </div>
           </section>

@@ -10,6 +10,7 @@ import PoliciesPage from './Pages/PoliciesPage';
 import SedimentaryBasins from './Pages/SedimentaryBasins';
 import HelpPage from './Pages/HelpPage';
 import ResearchInvest from './Pages/ResearchInvest';
+import TechnologyBehindNDR from './Pages/TechnologyBehindNDR';
 import './App.css'
 
 export default function App() {
@@ -26,6 +27,9 @@ export default function App() {
         <Route path="/sedimentaryBasins" element={<SedimentaryBasins />} />
         <Route path ="/help" element={<HelpPage />} />
         <Route path ="/researchInvest" element={<ResearchInvest />} />
+       <Route path="/technologybehindNDR" element={<TechnologyBehindNDR />} />
+
+
       </Routes>
     </>
   )

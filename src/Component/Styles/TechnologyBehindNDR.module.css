@@ -1,0 +1,42 @@
+.container {
+  background: #f8e4c3;
+  padding: 40px 40px;
+  max-width: 900px;
+  margin: 60px auto;     /* 🔥 Top & bottom spacing for breathing room */
+  border-radius: 12px;
+}
+
+/* Heading spacing */
+.title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 10px;      /* Extra space from top */
+}
+
+/* List spacing */
+.list {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+/* Image sections */
+.imageBox {
+  text-align: center;
+  margin: 40px 0;        /* 🔥 Space above & below both images */
+}
+
+.image {
+  width: 85%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.caption {
+  font-size: 13px;
+  color: #555;
+  margin-top: 10px;
+}

@@ -6,7 +6,6 @@
 
 .container {
   display: flex;
-  /* justify-content: space-between; */
   gap: 40px;
   padding-bottom: 40px;
   max-width: 84rem;
@@ -20,7 +19,6 @@
 
 .logoboxfooter {
   width: 3.5rem;
-
 }
 
 .title {
@@ -47,14 +45,13 @@
   opacity: .85;
 }
 
-.middle
-{
-    display: flex;
-    gap: 0px 2.5rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    padding-left: 3rem;
+/* Middle Section */
+.middle {
+  display: flex;
+  gap: 0px 2.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 3rem;
 }
-
 
 .right {
   width: 25%;
@@ -65,17 +62,32 @@
   margin-bottom: 10px;
 }
 
-.middle ul, .right ul {
+.middle ul,
+.right ul {
   list-style: none;
   padding: 0;
 }
 
-.middle ul li,
-.right ul li {
-  margin-bottom: 5px;
-  font-size: 14px;
-  cursor: pointer;
+/* ---------- LINK LIST Styling ---------- */
+.linkList li {
+  margin-bottom: 6px;
 }
+
+.linkList li a {
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.linkList li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  transform: translateX(3px);
+}
+
+/* -------------------------------------- */
 
 .addr {
   margin-top: 10px;
@@ -99,25 +111,34 @@
   font-size: 22px;
 }
 
+.headingBlock {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  gap: 0px 2rem;
+}
+
+/* ---------- EXTRA INFO BLOCK ---------- */
+.extraInfo {
+  text-align: center;
+  color: #d6e2ff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* COPYRIGHT BAR */
+.copyBar {
+  background: #021f4f;
+  padding: 10px 0;
+}
+
 .copy {
- 
+  text-align: center;
   font-size: 13px;
   opacity: .85;
-  /* border-top: 1px solid rgba(255,255,255,0.2); */
-  padding: 1rem 0px;
   color: white;
-}
-
-
-.headingBlock
-{
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    gap: 0px 2rem;
-}
-
-.h2 {
-    margin: 18px 0 10px;
-    color: #fff;
 }

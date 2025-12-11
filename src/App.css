@@ -1,9 +1,10 @@
 
 
 .container {
-  max-width: 84rem;
+  max-width: 87rem;
   margin: 0 auto;
   width: 100%;
+  padding: 0px 2rem;
 }
 
 .orangegradinet

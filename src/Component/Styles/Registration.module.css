@@ -1,0 +1,115 @@
+/* MAIN CONTAINER */
+.container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding-bottom: 40px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* SECTION TITLE */
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px 0 10px;
+}
+
+/* FORM WRAPPER */
+.formBox {
+  background: white;
+  padding: 10px 5px;
+}
+
+/* GRID ROWS */
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+/* FULL WIDTH */
+.inputGroupFull {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LABEL */
+.inputGroup label,
+.inputGroupFull label,
+.captchaBox label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* INPUTS + SELECT */
+.inputGroup input,
+.inputGroup select,
+.inputGroupFull textarea,
+.inputGroupFull input,
+.captchaContainer input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #9a9a9a;
+  font-size: 14px;
+  outline: none;
+}
+
+.inputGroupFull textarea {
+  height: 130px;
+  resize: none;
+}
+
+/* PHONE ROW */
+.phoneRow {
+  display: flex;
+  gap: 8px;
+}
+
+.countryCode {
+  width: 75px;
+}
+
+/* CAPTCHA AREA */
+.captchaBox {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.captchaContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.captchaImg img {
+  width: 45px;
+}
+
+/* SUBMIT BUTTON */
+.submitBtn {
+  margin: 40px auto 0;
+  display: block;
+  width: 160px;
+  padding: 10px 0;
+  background: #00a2ff;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -132,12 +132,14 @@ const Header = () => {
             </a>
 
             <a
-              href="https://www.ndrdgh.gov.in/NDR/?page_id=1486"
+              href="/registration"
               target="_blank"
               className={styles.registerBtn}
             >
               Register
             </a>
+
+            
           </div>
 
         </div>

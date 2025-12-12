@@ -12,6 +12,7 @@ import HelpPage from './Pages/HelpPage';
 import ResearchInvest from './Pages/ResearchInvest';
 import TechnologyBehindNDR from './Pages/TechnologyBehindNDR';
 import DownloadDataPriceListPolicies from './Pages/DownloadDataPriceListPolicies';
+import RegistrationPage from './Pages/RegistrationPage';
 import './App.css'
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
         <Route path ="/researchInvest" element={<ResearchInvest />} />
        <Route path="/technologybehindNDR" element={<TechnologyBehindNDR />} />
        <Route path="/DownloadDataPriceListPolicies" element={<DownloadDataPriceListPolicies />} />
+       <Route path="/registration" element={<RegistrationPage />} />
 
 
       </Routes>

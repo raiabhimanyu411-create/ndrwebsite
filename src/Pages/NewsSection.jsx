@@ -193,7 +193,7 @@ export default function NewsSection() {
 
             <div style={{ width: "90%", height: "19rem", borderRadius: "5px", margin: "0px auto" , display : "flex" , justifyContent : "center" }}>
 
-              <img style={{ width: "81%" }} src={mapi} alt="" />
+              <img style={{ width: "100%" }} src={mapi} alt="" />
             </div>
 
 

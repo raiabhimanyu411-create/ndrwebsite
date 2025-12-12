@@ -37,73 +37,79 @@ export default function NewsSection() {
   return (
     <section className={styles.wrapper} aria-labelledby="news-title">
 
-        <div className="container">
-  <div className={styles.innerGrid}>
-        {/* LEFT: Maps + Articles */}
-        <div className={styles.leftColumn}>
-          <div className={styles.card} role="region" aria-label="Maps and Statistics">
-            <div className={styles.cardHeader}>
-              <span className={styles.icon} aria-hidden>
-                🗺️
-              </span>
-              <h3 className={styles.cardTitle}>Map &amp; Statistics</h3>
+      <div className="container">
+        <div className={styles.innerGrid}>
+          {/* LEFT: Maps + Articles */}
+          <div className={styles.leftColumn}>
+            <div className={styles.card} role="region" aria-label="Maps and Statistics">
+              <div className={styles.cardHeader}>
+                <span className={styles.icon} aria-hidden>
+
+                </span>
+                <h3 className={styles.cardTitle}>Map &amp; Statistics</h3>
+              </div>
+              <a
+                className={styles.mapsLink}
+                href="https://www.ndrdgh.gov.in/NDR/?page_id=517"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Maps and Statistics →
+              </a>
+
             </div>
-            <a className={styles.mapsLink} href={mapsLink}>
-              Maps and Statistics →
-            </a>
+
+            <div className={styles.card} role="region" aria-label="Technical Articles">
+              <div className={styles.cardHeader}>
+                <span className={styles.icon} aria-hidden>
+
+                </span>
+                <h3 className={styles.cardTitle}>Technical Articles</h3>
+              </div>
+
+              <ul className={styles.articleList}>
+                {articles.map((a, i) => (
+                  <li key={i} className={styles.articleItem}>
+                    <a href={a.href} className={styles.articleLink}>
+                      {a.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
-          <div className={styles.card} role="region" aria-label="Technical Articles">
-            <div className={styles.cardHeader}>
-              <span className={styles.icon} aria-hidden>
-                📘
-              </span>
-              <h3 className={styles.cardTitle}>Technical Articles</h3>
-            </div>
+          {/* RIGHT: What's New */}
+          <div className={styles.rightColumn} role="region" aria-labelledby="news-title">
+            <h2 id="news-title" className={styles.rightTitle}>
+              What's new &amp; Upcoming Events
+            </h2>
 
-            <ul className={styles.articleList}>
-              {articles.map((a, i) => (
-                <li key={i} className={styles.articleItem}>
-                  <a href={a.href} className={styles.articleLink}>
-                    {a.title}
+            <ul className={styles.eventList}>
+              {events.map((e, i) => (
+                <li key={i} className={styles.eventItem}>
+                  <span className={styles.bullet} aria-hidden>
+                    •
+                  </span>
+                  <a className={styles.eventLink} href={e.href}>
+                    {e.title}
                   </a>
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
 
-        {/* RIGHT: What's New */}
-        <div className={styles.rightColumn} role="region" aria-labelledby="news-title">
-          <h2 id="news-title" className={styles.rightTitle}>
-            🔔 What's new &amp; Upcoming Events
-          </h2>
-
-          <ul className={styles.eventList}>
-            {events.map((e, i) => (
-              <li key={i} className={styles.eventItem}>
-                <span className={styles.bullet} aria-hidden>
-                  •
+            <div className={styles.actions}>
+              <a className={styles.viewAllBtn} href="#/events">
+                View All
+                <span className={styles.chev} aria-hidden>
+                  ›
                 </span>
-                <a className={styles.eventLink} href={e.href}>
-                  {e.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <div className={styles.actions}>
-            <a className={styles.viewAllBtn} href="#/events">
-              View All
-              <span className={styles.chev} aria-hidden>
-                ›
-              </span>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-        </div>
-    
+
     </section>
   );
 }

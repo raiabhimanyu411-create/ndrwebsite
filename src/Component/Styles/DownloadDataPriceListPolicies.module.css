@@ -1,0 +1,36 @@
+.pageWrapper {
+  padding: 40px;
+  background: #f6d4b2;
+  min-height: 80vh;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.list li {
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.link {
+  color: #0077cc;
+  font-weight: 600;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

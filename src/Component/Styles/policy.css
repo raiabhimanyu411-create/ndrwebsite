@@ -9,7 +9,7 @@
 .policy-card {
   background-color: #fecb76;
   width: 100%;
-  max-width: 900px;
+  max-width: 75rem;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);

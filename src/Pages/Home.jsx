@@ -215,7 +215,11 @@ National Data Repository (NDR) is an integrated data repository of Exploration a
                 </button> </Link>
                
 
-                <button className={styles.learnBtn}>Our Policies</button>
+               <Link to="policies">
+               <button className={styles.learnBtn}>Our Policies</button>
+               </Link>
+
+                
               </div>
             </div>
           </section>

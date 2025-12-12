@@ -44,10 +44,10 @@ export default function Footer() {
                         <div>
                             <h3 className={styles.colTitle}>Useful links</h3>
                             <ul className={styles.linkList}>
-                                <li><Link to="/aboutNDR">About NDR</Link></li>
+                                <li><Link to="/about">About NDR</Link></li>
                                 <li><Link to="/data-access-policy">Data access policy</Link></li>
                                 <li><Link to="/data-packages">Data packages</Link></li>
-                                <li><Link to="/help-support">Help & support</Link></li>
+                                <li><Link to="/help">Help & support</Link></li>
                                 <li><Link to="/user-manual">User manuals</Link></li>
                                 <li><Link to="/faq">FAQ</Link></li>
                             </ul>

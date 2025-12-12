@@ -103,7 +103,7 @@ const Header = () => {
             <div className={styles.dropdown}>
               <span>Download ▾</span>
               <div className={styles.dropdownContent}>
-                <a href="https://www.ndrdgh.gov.in/NDR/?page_id=11708/" target="_blank">
+                <a href="/DownloadDataPriceListPolicies" target="_blank">
                   Data Price List & Policies
                 </a>
               </div>

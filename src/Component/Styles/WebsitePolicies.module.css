@@ -1,0 +1,41 @@
+.wrapper {
+  padding: 60px 16px;
+  display: flex;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.card {
+  max-width: 900px;
+  width: 100%;
+  /* background: #fcd9b6; */
+  border: 6px solid #d97706;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.title {
+  color: #ff6b00; /* green heading like image */
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.list {
+  padding-left: 20px;
+}
+
+.list li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.list li a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.list li a:hover {
+  text-decoration: underline;
+}

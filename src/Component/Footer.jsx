@@ -65,7 +65,7 @@ export default function Footer() {
                         <div>
                             <h3 className={styles.colTitle}>Legal</h3>
                             <ul className={styles.linkList}>
-                                <li><Link to="/privacy-policy">Privacy policy</Link></li>
+                                <li><Link to="/websitePolicies">Website Policies</Link></li>
                                 <li><Link to="/terms-of-use">Terms of use</Link></li>
                                 <li><Link to="/disclaimer">Disclaimer</Link></li>
                                 <li><Link to="/copyright">Copyright</Link></li>

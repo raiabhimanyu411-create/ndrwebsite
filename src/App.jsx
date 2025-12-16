@@ -13,6 +13,18 @@ import ResearchInvest from './Pages/ResearchInvest';
 import TechnologyBehindNDR from './Pages/TechnologyBehindNDR';
 import DownloadDataPriceListPolicies from './Pages/DownloadDataPriceListPolicies';
 import RegistrationPage from './Pages/RegistrationPage';
+import CopyrightPolicy from './Pages/CopyrightPolicy';
+import Disclaimer from './Pages/Disclaimer';
+import ComapPolicy from './Pages/ComapPolicy';
+import ContentReviewPolicy from './Pages/ContentReviewPolicy';
+import ContentArchivalPolicy from './Pages/ContentArchivalPolicy';
+import ContingencyManagementPlan from './Pages/ContingencyManagementPlan';
+import WebsiteMonitoringPolicy from './Pages/WebsiteMonitoringPolicy';
+import SecurityPolicy from './Pages/SecurityPolicy';
+import HyperlinkingPolicy from './Pages/HyperlinkingPolicy';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
+import TermsConditions from './Pages/TermsConditions';
+import WebsitePolicies from './Pages/WebsitePolicies';
 import './App.css'
 
 export default function App() {
@@ -32,6 +44,18 @@ export default function App() {
        <Route path="/technologybehindNDR" element={<TechnologyBehindNDR />} />
        <Route path="/DownloadDataPriceListPolicies" element={<DownloadDataPriceListPolicies />} />
        <Route path="/registration" element={<RegistrationPage />} />
+       <Route path="/copyrightPolicy" element={<CopyrightPolicy />} />
+       <Route path="/disclaimer" element={<Disclaimer />} />
+       <Route path="/comapPolicy" element={<ComapPolicy />} />
+       <Route path="/contentReviewPolicy" element={<ContentReviewPolicy />} />
+       <Route path="/contentArchivalPolicy" element={<ContentArchivalPolicy />} />
+       <Route path="/contingencyManagementPlan" element={<ContingencyManagementPlan />} />
+       <Route path="/websiteMonitoringPolicy" element={<WebsiteMonitoringPolicy />} />
+       <Route path="/securityPolicy" element={<SecurityPolicy />} />
+       <Route path="/hyperlinkingPolicy" element={<HyperlinkingPolicy />} />
+       <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+       <Route path="/termsConditions" element={<TermsConditions />} />
+       <Route path="/websitePolicies" element={<WebsitePolicies />} />
 
 
       </Routes>

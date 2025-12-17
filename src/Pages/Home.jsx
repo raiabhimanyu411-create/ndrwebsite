@@ -54,31 +54,32 @@ const Home2 = () => {
                 public on <strong>28th July 2017</strong>. NDR is a fully
                 Government of India owned E&P data repository.
               </p> */}
-               <h3>Content Owned by DGH and Powered by Halliburton</h3>
-                 {/* <div>
+              <h3>Content Owned by DGH and Powered by Halliburton</h3>
+              {/* <div>
             Next Gen NDR is hosted on Public Cloud
           </div> */}
 
-             <p>
-National Data Repository (NDR) is an integrated data repository of Exploration and Production (E&P) data of Indian sedimentary basins. National Data Repository (NDR) was launched for public on 28th July 2017. NDR is a fully Government of India owned E&P data repository. NDR is hosted at Directorate General of Hydrocarbons (DGH) Noida, Sector-73, UP 201301, India. DGH is a technical arm of the Ministry of Petroleum and Natural Gas (MoPNG). NDR offers an unique platform to all E&P Operators, E&P Service Companies, E&P Investors, Academia to delve inside diverse E&P datasets of Indian sedimentary basins.
-</p>
+              <p>
+                National Data Repository (NDR) is an integrated data repository of Exploration and Production (E&P) data of Indian sedimentary basins. National Data Repository (NDR) was launched for public on 28th July 2017. NDR is a fully Government of India owned E&P data repository. NDR is hosted at Directorate General of Hydrocarbons (DGH) Noida, Sector-73, UP 201301, India. DGH is a technical arm of the Ministry of Petroleum and Natural Gas (MoPNG). NDR offers an unique platform to all E&P Operators, E&P Service Companies, E&P Investors, Academia to delve inside diverse E&P datasets of Indian sedimentary basins.
+              </p>
 
 
 
 
 
 
-  {/* <p></p> */}
-                    {/* <p>Next Gen NDR is hosted on Public Cloud</p> */}
+              {/* <p></p> */}
+              {/* <p>Next Gen NDR is hosted on Public Cloud</p> */}
 
 
               <div className={styles.buttons}>
                 <button className={styles.exploreBtn}>
                   Explore Data <span>→</span>
                 </button>
+                
                 <Link to="/researchInvest">
                   <button className={styles.learnBtn}>Research and Invest in India</button>
-               
+
 
                 </Link>
 
@@ -213,13 +214,13 @@ National Data Repository (NDR) is an integrated data repository of Exploration a
                 <Link to="https://www.halliburton.com/en/software/national-digital-resource"> <button className={styles.exploreBtn}>
                   Technology Behind NDR <span>→</span>
                 </button> </Link>
-               
 
-               <Link to="policies">
-               <button className={styles.learnBtn}>Our Policies</button>
-               </Link>
 
-                
+                <Link to="policies">
+                  <button className={styles.learnBtn}>Our Policies</button>
+                </Link>
+
+
               </div>
             </div>
           </section>

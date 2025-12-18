@@ -54,7 +54,7 @@ const Home2 = () => {
                 public on <strong>28th July 2017</strong>. NDR is a fully
                 Government of India owned E&P data repository.
               </p> */}
-              <h3>Content Owned by DGH and Powered by Halliburton</h3>
+              {/* <h3>Content Owned by DGH and Powered by Halliburton</h3> */}
               {/* <div>
             Next Gen NDR is hosted on Public Cloud
           </div> */}
@@ -74,7 +74,7 @@ const Home2 = () => {
 
               <div className={styles.buttons}>
 
-                <Link to="/sedimentaryBasins">
+                <Link to="https://enterprise-search.dsif.nicmeghrajprj1.ienergycloud.solutions/">
                   <button className={styles.exploreBtn}>
                     Explore Data <span>→</span>
                   </button>

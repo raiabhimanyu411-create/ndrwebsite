@@ -3,8 +3,8 @@ import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/TechnologyBehindNDR.module.css";
 
-// import map1 from "../assets/Images/map1.png";
-// import map2 from "../assets/Images/map2.png";
+// import map1 from "../assets/images/map1.png";
+// import map2 from "../assets/images/map2.png";
 
 export default function TechnologyBehindNDR() {
   return (

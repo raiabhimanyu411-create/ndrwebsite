@@ -1,7 +1,7 @@
 import React from "react";
 import ReactCountryFlag from "react-country-flag";
 import styles from "../Pages/Styles/Home.module.css";
-import Logo from "../assets/Images/Emblem.png";
+import Logo from "../assets/images/Emblem.png";
 import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 

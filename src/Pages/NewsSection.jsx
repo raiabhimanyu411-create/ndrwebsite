@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../Component/Styles/NewsSection.module.css";
-import artille from "../assets/Images/stats/araticle.svg";
-import map from "../assets/Images/stats/map.svg";
-import noti from "../assets/Images/stats/noti.svg";
-import mapi from "../assets/Images/stats/india.png"
+import artille from "../assets/images/stats/araticle.svg";
+import map from "../assets/images/stats/map.svg";
+import noti from "../assets/images/stats/noti.svg";
+import mapi from "../assets/images/stats/india.png"
 
 export default function NewsSection() {
 

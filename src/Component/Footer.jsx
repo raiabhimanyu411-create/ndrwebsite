@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Styles/Footer.module.css";
-import emblem from "../assets/Images/emblem1.png";
+import emblem from "../assets/images/emblem1.png";
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import DateAndTime from "./DateAndTime";
-import hl from "../assets/Images/hl.png"
+import hl from "../assets/images/hl.png"
 
 export default function Footer() {
     return (

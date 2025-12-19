@@ -2,10 +2,10 @@ import ReactCountryFlag from "react-country-flag";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import React from "react";
 import styles from "./Styles/Home.module.css";
-import hero_img from "../assets/Images/heroimg.png";
-import Basin from "../assets/Images/Basin.png";
-import Data from "../assets/Images/Data.png";
-import Open from "../assets/Images/Open.png";
+import hero_img from "../assets/images/heroimg.png";
+import Basin from "../assets/images/Basin.png";
+import Data from "../assets/images/Data.png";
+import Open from "../assets/images/Open.png";
 import Footer from "../Component/Footer";
 
 import Header from "../Component/Header";

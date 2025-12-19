@@ -95,7 +95,7 @@ const Header = () => {
                 <a href="https://www.oisd.gov.in/" target="_blank">Oil Industry Safety Directorate</a>
                 <a href="https://www.moef.gov.in/" target="_blank">MoEF & CC</a>
                 <a href="https://dgms.gov.in/" target="_blank">Directorate General Of Mines Saftey</a>
-                <a href="https://ppac.org.in/" target="_blank">Petroleum Planning & Analysis Cell</a>
+                {/* <a href="https://ppac.org.in/" target="_blank">Petroleum Planning & Analysis Cell</a> */}
               </div>
             </div>
 

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/New2DSeismicData.module.css";
-import seismicImg from "../assets/images/Year2024.jpg";
+import seismicImg from "../assets/images/Archive2.jpg";
 
 const New2DSeismicData = () => {
   return (

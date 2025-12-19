@@ -77,13 +77,13 @@ const SecurityPolicy = () => {
             and listed in exception reports for further scrutiny.
           </p>
 
-          <h3 className={styles.subTitle}>Disaster Recovery Solution</h3>
+          {/* <h3 className={styles.subTitle}>Disaster Recovery Solution</h3>
           <p className={styles.text}>
             Disaster Recovery Centre of NDR is located at Secondary Data Centre,
             STPI, Bhubaneswar for business continuity in case of disaster
             scenario at Primary Data Centre. Recovery Time Objective (RTO) to
             start the operations from DR Centre is 24 Hours.
-          </p>
+          </p> */}
         </div>
       </main>
 

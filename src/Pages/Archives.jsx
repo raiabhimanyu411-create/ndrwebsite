@@ -15,10 +15,10 @@ const Archives = () => {
           <h2>Archives by Month:</h2>
           <ul>
             <li>
-              <Link to="/archives/2024/february">February 2024</Link>
+              <Link to="/newSeismicData">February 2024</Link>
             </li>
             <li>
-              <Link to="/archives/2023/january">January 2023</Link>
+              <Link to="/revisedDataSubmission">January 2023</Link>
             </li>
           </ul>
         </div>
@@ -28,10 +28,10 @@ const Archives = () => {
           <h2>Archives by Year:</h2>
           <ul>
             <li>
-              <Link to="/archives/year/2024">2024</Link>
+              <Link to="/new2DSeismicData">2024</Link>
             </li>
             <li>
-              <Link to="/archives/year/2023">2023</Link>
+              <Link to="/revisedDataSubmission">2023</Link>
             </li>
           </ul>
         </div>
@@ -43,7 +43,7 @@ const Archives = () => {
             <li>Categories</li>
             <ul className={styles.subList}>
               <li>
-                <Link to="/archives/category/new">New</Link>
+                <Link to="/new2DSeismicData">New</Link>
               </li>
             </ul>
           </ul>

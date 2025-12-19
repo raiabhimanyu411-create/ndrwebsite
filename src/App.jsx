@@ -26,6 +26,9 @@ import PrivacyPolicy from './Pages/PrivacyPolicy';
 import TermsConditions from './Pages/TermsConditions';
 import WebsitePolicies from './Pages/WebsitePolicies';
 import Archives from './Pages/Archives';
+import NewSeismicData from './Pages/NewSeismicData';
+import RevisedDataSubmission from './Pages/RevisedDataSubmission';
+import New2DSeismicData from './Pages/New2DSeismicData';
 import './App.css'
 
 export default function App() {
@@ -58,6 +61,9 @@ export default function App() {
        <Route path="/termsConditions" element={<TermsConditions />} />
        <Route path="/websitePolicies" element={<WebsitePolicies />} />
        <Route path="/archives" element={<Archives />} />
+       <Route path="/newSeismicData" element={<NewSeismicData />} />
+       <Route path="/revisedDataSubmission" element={<RevisedDataSubmission />} />
+       <Route path="/new2DSeismicData" element={<New2DSeismicData />} />
 
 
       </Routes>

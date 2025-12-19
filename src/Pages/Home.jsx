@@ -39,7 +39,7 @@ const Home2 = () => {
 
   return (
     <>
-      {/* ⭐ HEADER COMPONENT */}
+      {/*  HEADER COMPONENT */}
       <Header />
 
       <div className="orangegradinet">

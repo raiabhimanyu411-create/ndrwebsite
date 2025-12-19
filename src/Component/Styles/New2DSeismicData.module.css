@@ -1,0 +1,36 @@
+.pageWrapper {
+  /* background-color: #e58a1f; outer orange */
+  padding: 35px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 794px;              /* A4 width */
+  /* min-height: 1123px;        A4 height */
+  /* background-color: #ffd9b8; inner peach */
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1e88e5; /* blue heading */
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.imageContainer {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

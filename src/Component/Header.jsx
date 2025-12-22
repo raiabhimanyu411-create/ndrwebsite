@@ -124,7 +124,7 @@ const Header = () => {
             </div>
 
             <a
-              href="https://www.ndrdgh.gov.in/NDRTWS/system/mainframe.asp"
+              href="https://enterprise-search.dsif.nicmeghrajprj1.ienergycloud.solutions/"
               target="_blank"
               className={styles.loginBtn}
             >

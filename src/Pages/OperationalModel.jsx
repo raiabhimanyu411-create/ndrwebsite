@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import "../Component/Styles/Operational.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const OperationalModel = () => {
   const points = [
@@ -13,7 +15,7 @@ const OperationalModel = () => {
 
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div className="operational-wrapper">
         <div className="operational-container">

@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/TechnologyBehindNDR.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 // import map1 from "../assets/images/map1.png";
 // import map2 from "../assets/images/map2.png";
@@ -9,7 +11,7 @@ import styles from "../Component/Styles/TechnologyBehindNDR.module.css";
 export default function TechnologyBehindNDR() {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div className={styles.container}>
         <h2 className={styles.title}>Technology Behind the NDR</h2>

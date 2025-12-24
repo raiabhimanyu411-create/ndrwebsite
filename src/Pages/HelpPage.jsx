@@ -3,11 +3,13 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/help.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const HelpPage = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <main className={styles.helpWrapper}>
         <div className="container">

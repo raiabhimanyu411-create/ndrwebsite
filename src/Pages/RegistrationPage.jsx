@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
+import HeaderWrapper from "../Component/HeaderWrapper";
 
 const RegistrationPage = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div style={styles.page}>
         <h2 style={styles.mainTitle}>Registration Form</h2>

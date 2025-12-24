@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/ResearchInvest.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const ResearchInvest = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div className="container">
         <div className={styles.pageWrapper}>

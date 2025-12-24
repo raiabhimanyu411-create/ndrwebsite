@@ -3,11 +3,12 @@ import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/New2DSeismicData.module.css";
 import seismicImg from "../assets/images/Archive2.jpg";
+import HeaderWrapper from "../Component/HeaderWrapper";
 
 const New2DSeismicData = () => {
   return (
     <>
-      <Header />
+     <HeaderWrapper/>
 
       <main className={styles.pageWrapper}>
         <div className={styles.page}>

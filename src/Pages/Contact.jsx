@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import "../Component/Styles/Contact.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const Contact = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div className="continer">
         <div className="contact-page">

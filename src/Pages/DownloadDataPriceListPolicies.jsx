@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/DownloadDataPriceListPolicies.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const DownloadDataPriceListPolicies = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div className="container">
 

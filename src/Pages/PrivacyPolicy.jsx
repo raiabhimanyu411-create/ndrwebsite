@@ -2,12 +2,13 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/PrivacyPolicy.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Header />
-
+      <HeaderWrapper/>
       <main className={styles.wrapper}>
         <div className={styles.card}>
           <h2 className={styles.title}>Privacy Policy</h2>

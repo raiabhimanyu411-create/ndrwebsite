@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/NewSeismicData.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const RevisedDataSubmission = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <main className={styles.pageWrapper}>
         <div className={styles.page}>

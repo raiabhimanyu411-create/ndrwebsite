@@ -109,23 +109,23 @@ const Home2 = () => {
         <div className={styles.statItem}>
           <IoCheckmarkCircle style={{ fontSize: "2rem", color: "green" }} />
           <h3>26</h3>
-          <p>Sedimentary basins covered</p>
+          <p className={styles.statItemPara}>Sedimentary basins covered</p>
         </div>
 
-        <div className={styles.dot}></div>
+        {/* <div className={styles.dot}></div> */}
 
         <div className={styles.statItem}>
           <IoCheckmarkCircle style={{ fontSize: "2rem", color: "green" }} />
           <h3>5+ PB</h3>
-          <p>Of seismic and well data</p>
+          <p className={styles.statItemPara} >Of seismic and well data</p>
         </div>
 
-        <div className={styles.dot}></div>
+        {/* <div className={styles.dot}></div> */}
 
         <div className={styles.statItem}>
           <IoCheckmarkCircle style={{ fontSize: "2rem", color: "green" }} />
           <h3>20,000+</h3>
-          <p>wells with digital data</p>
+          <p className={styles.statItemPara}>wells with digital data</p>
         </div>
       </section>
 

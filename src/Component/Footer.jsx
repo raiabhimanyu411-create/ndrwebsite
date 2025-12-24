@@ -65,13 +65,13 @@ export default function Footer() {
                             <div className={styles.social}>
                                 <span>Social</span>
                                 <div className={styles.icons}>
-                                    <a className= {styles.medialinks} style={{fontSize:"1.8rem"}} target="_blank" href="https://x.com/DghIndia">
+                                    <a className={styles.medialinks} style={{ fontSize: "1.8rem" }} target="_blank" href="https://x.com/DghIndia">
                                         <FaXTwitter className={styles.icon} />
                                     </a>
 
-                                     <a className= {styles.medialinks} style={{fontSize:"1.8rem"}} target="_blank" href="https://www.linkedin.com/in/dgh-india-826855120"> 
+                                    <a className={styles.medialinks} style={{ fontSize: "1.8rem" }} target="_blank" href="https://www.linkedin.com/in/dgh-india-826855120">
                                         <FaLinkedin className={styles.icon} />
-                                     </a> 
+                                    </a>
 
 
                                 </div>
@@ -101,8 +101,13 @@ export default function Footer() {
                             Phone: +91-120-2472000<br />
                             Email: ndr@dgh.gov.in
                         </p>
-                        <div style={{ marginTop: "2rem", width: "15vw", marginLeft: "3px" , position : "absolute" , right : "20px"}}>
+                        {/* <div style={{ marginTop: "2rem", width: "15vw", marginLeft: "3px" , position : "absolute" , right : "20px"}}>
                             <img style={{ width: "100%", filter: "brightness(0) invert(1)" }} src={hl} alt="" />
+                        </div> */}
+
+
+                        <div className={styles.hauliLogoBox}>
+                            <img className={styles.hauliLogo} src={hl} alt="" />
                         </div>
                     </div>
 

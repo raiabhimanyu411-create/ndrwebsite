@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/sedimentary.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const SedimentaryBasins = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div className={styles.pageWrapper}>
         <div className={styles.container}>

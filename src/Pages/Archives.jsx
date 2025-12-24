@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/Archives.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const Archives = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div className={styles.archiveWrapper}>
         {/* Archives by Month */}

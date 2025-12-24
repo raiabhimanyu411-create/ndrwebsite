@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 import { FaDatabase, FaOilCan, FaMapMarkedAlt, FaBook, FaCubes } from "react-icons/fa";
 import "../Component/Styles/About.css";
@@ -16,7 +18,8 @@ const About = () => {
 
     return (
         <>
-            <Header />
+            {/* <Header /> */}
+             <HeaderWrapper/>
 
             <div className="about-wrapper">
                 <div className="about-container">

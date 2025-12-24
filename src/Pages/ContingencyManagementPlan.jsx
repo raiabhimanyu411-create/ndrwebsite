@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/ContingencyManagementPlan.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const ContingencyManagementPlan = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <main className={styles.wrapper}>
         <div className={styles.card}>

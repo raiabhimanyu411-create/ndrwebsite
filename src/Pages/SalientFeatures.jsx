@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import "../Component/Styles/Salient.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const SalientFeatures = () => {
   const points = [
@@ -22,7 +24,7 @@ const SalientFeatures = () => {
 
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div className="salient-wrapper">
         <div className="salient-container">

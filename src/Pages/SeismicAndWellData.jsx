@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/SeismicAndWellData.module.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 // ✅ IMPORT IMAGE
 import indiaMap from "../assets/images/stats/india.png";
@@ -9,7 +11,7 @@ import indiaMap from "../assets/images/stats/india.png";
 const IndiaStatsMap = () => {
   return (
     <>
-      <Header />
+     <HeaderWrapper/>
 
       <main className={styles.pageWrapper}>
         <div className={styles.page}>

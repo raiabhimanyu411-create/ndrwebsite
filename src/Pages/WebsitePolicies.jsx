@@ -3,11 +3,13 @@ import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/WebsitePolicies.module.css";
 import { Link } from "react-router-dom";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const WebsitePolicies = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <main className={styles.wrapper}>
         <div className={styles.card}>

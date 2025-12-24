@@ -3,11 +3,13 @@ import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "../Component/Styles/NewSeismicData.module.css";;
 import seismicMap from "../assets/images/FEB2024.jpg";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const NewSeismicData = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <main className={styles.pageWrapper}>
         <div className={styles.page}>

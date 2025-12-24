@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import "../Component/Styles/policy.css";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 const PoliciesPage = () => {
   return (
     <>
-      <Header />
+      <HeaderWrapper/>
 
       <div className="conainer">
 

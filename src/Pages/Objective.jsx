@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
+import HeaderWrapper from "../Component/HeaderWrapper";
+
 
 import { FaCheckCircle } from "react-icons/fa";
 import "../Component/Styles/Objective.css";
@@ -18,7 +20,7 @@ const Objective = () => {
 
     return (
         <>
-            <Header />
+            <HeaderWrapper/>
 
             <div className="container">
                 <div className="objective-wrapper">

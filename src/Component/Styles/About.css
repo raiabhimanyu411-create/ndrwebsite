@@ -87,9 +87,58 @@
 
 /* MOBILE VIEW */
 @media (max-width: 768px) {
+
+  /* WRAPPER */
+  .about-wrapper {
+    padding: 30px 0;
+  }
+
+  /* MAIN CONTAINER */
+  .about-container {
+    width: 94%;
+    padding: 25px 20px;
+    font-size: 15px;
+    line-height: 1.65;
+    border-width: 3px;
+  }
+
+  /* MAIN HEADING */
+  .about-container h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+
+  /* CARD ROWS */
   .top-row,
   .bottom-row {
     flex-direction: column;
+    gap: 18px;
     align-items: center;
   }
+
+  /* CARD */
+  .card {
+    width: 100%;
+    max-width: 360px;
+    padding: 16px 18px;
+    gap: 12px;
+  }
+
+  /* ICON */
+  .icon {
+    font-size: 26px;
+  }
+
+  /* PARAGRAPH */
+  .about-container p {
+    margin-bottom: 18px;
+  }
 }
+

@@ -26,3 +26,20 @@
   height: auto;
   object-fit: contain;
 }
+@media (max-width: 900px) {
+
+  .pageWrapper {
+    padding: 20px 10px;
+  }
+
+  .page {
+    width: 100%;
+    min-height: auto;       /* mobile pe A4 height force mat karo */
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .imageBox {
+    padding: 8px;
+  }
+}

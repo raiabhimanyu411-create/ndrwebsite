@@ -52,11 +52,38 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  .objective-wrapper {
+    padding: 30px 0;
+  }
+
   .objective-container {
-    padding: 30px 20px;
+    width: 94%;
+    padding: 25px 18px;
+    font-size: 15px;
+    line-height: 1.65;
+    border-width: 3px;
+  }
+
+  .objective-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    font-size: 15px;
+    margin-bottom: 18px;
   }
 
   .objective-list li {
-    font-size: 16px;
+    font-size: 15px;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .list-icon {
+    font-size: 18px;
+    margin-top: 3px;
   }
 }
+

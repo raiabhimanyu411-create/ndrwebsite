@@ -30,6 +30,7 @@ import NewSeismicData from './Pages/NewSeismicData';
 import RevisedDataSubmission from './Pages/RevisedDataSubmission';
 import New2DSeismicData from './Pages/New2DSeismicData';
 import IndiaStatsMap from './Pages/SeismicAndWellData';
+import NotFound from './Pages/NotFound';
 import './App.css'
 
 export default function App() {
@@ -66,6 +67,7 @@ export default function App() {
        <Route path="/revisedDataSubmission" element={<RevisedDataSubmission />} />
        <Route path="/new2DSeismicData" element={<New2DSeismicData />} />
        <Route path="/SeismicAndWellData" element={<IndiaStatsMap />} />
+       <Route path="*" element={<NotFound />} />
 
 
       </Routes>

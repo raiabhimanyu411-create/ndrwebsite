@@ -4,7 +4,7 @@ import styles from "../Component/Styles/Header.module.css";
 import { FiX } from "react-icons/fi";
 
 const MobileSidebar = ({ isOpen, onClose }) => {
-    
+
   return (
     <>
       {isOpen && <div className={styles.overlay} onClick={onClose} />}
@@ -36,8 +36,20 @@ const MobileSidebar = ({ isOpen, onClose }) => {
 
           <Link className={styles.sidebarNavLink} to="/contact" onClick={onClose}>Contact</Link>
 
-          <a className={styles.buttonText} className={styles.sidebarBtn}>Log in</a>
-          <a className={styles.buttonText} className={styles.sidebarBtn}>Register</a>
+          <Link
+            to="https://enterprise-search.dsif.nicmeghrajprj1.ienergycloud.solutions/"
+            className={`${styles.sidebarBtn} ${styles.buttonText}`}
+          >
+            Log in
+          </Link>
+
+          <Link
+            to="/registration"
+            className={`${styles.sidebarBtn} ${styles.buttonText}`}
+          >
+            Register
+          </Link>
+
         </nav>
       </div>
     </>

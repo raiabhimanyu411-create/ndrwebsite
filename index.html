@@ -2,18 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ndrwebsite</title>
+
     <style>
       body {
-       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        top: 0 !important;
+      }
+
+      /* Google translate UI hide */
+      #google_translate_element,
+      .goog-te-banner-frame,
+      .goog-te-gadget {
+        display: none !important;
       }
     </style>
+
+    <!-- Google Translate INIT (THIS WAS MISSING) -->
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: 'en,hi',
+            autoDisplay: false
+          },
+          'google_translate_element'
+        );
+      }
+
+      //  Language switch (cookie + reload)
+      window.setLanguage = function (lang) {
+        document.cookie = "googtrans=/en/" + lang + ";path=/";
+        document.cookie =
+          "googtrans=/en/" + lang + ";path=/;domain=" + location.hostname;
+        location.reload();
+      };
+    </script>
+
+    <!-- Google Translate Script (callback VERY IMPORTANT) -->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </head>
+
   <body>
+    <!-- Hidden container (MANDATORY) -->
+    <div id="google_translate_element" style="display:none"></div>
+
     <div id="root"></div>
+
+    <!-- Vite entry -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

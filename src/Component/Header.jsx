@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import styles from "../Pages/Styles/Home.module.css";
 import Logo from "../assets/images/Emblem.png";
@@ -6,10 +6,23 @@ import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 
 const Header = () => {
+  // Detect current language from Google Translate cookie
+  const [lang] = useState(
+    document.cookie.includes("googtrans=/en/hi") ? "hi" : "en"
+  );
+
+  // Govt-style language toggle (cookie + reload)
+  const toggleLanguage = () => {
+    if (lang === "en") {
+      window.setLanguage("hi");
+    } else {
+      window.setLanguage("en");
+    }
+  };
+
   return (
     <header className={styles.headerWrapper}>
-
-      {/* Top Bar */}
+      {/* ================= TOP BAR ================= */}
       <div className={styles.topBar}>
         <div className="container">
           <div className={styles.navbarnew}>
@@ -21,28 +34,28 @@ const Header = () => {
                 countryCode="IN"
                 svg
                 className={styles.flagIcon}
-                style={{height : "2em" , width : "2em" , margin : "0px 5px"}}
+                style={{ height: "2em", width: "2em", margin: "0 5px" }}
               />
             </div>
+
             <div className={styles.topRightButtons}>
               <Link to="/help" className={styles.helpBtn}>
                 Help
               </Link>
 
-              <button className={styles.langBtn}>
-                <span className={styles.langIcon}>अ / A</span> English
+              {/* 🌐 Language Toggle (FINAL) */}
+              <button onClick={toggleLanguage} className={styles.langBtn}>
+                <span className={styles.langIcon}>अ / A</span>
+                {lang === "en" ? " हिंदी" : " English"}
               </button>
             </div>
-
-
           </div>
         </div>
       </div>
 
-      {/* Main Header */}
+      {/* ================= MAIN HEADER ================= */}
       <div className="container">
         <div className={styles.mainHeader}>
-
           <div className={styles.leftSection}>
             <img src={Logo} alt="Government Emblem" className={styles.logo} />
             <div>
@@ -58,22 +71,14 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Navigation + Search */}
+      {/* ================= NAV + SEARCH ================= */}
       <div className="container">
         <div className={styles.navSearchWrapper}>
-
           <nav className={styles.navBar}>
-            <div>
-              <Link to="/">Home</Link>
-            </div>
+            <Link to="/">Home</Link>
+            <Link to="/about">About NDR</Link>
 
-            <div>
-              <Link to="/about">About NDR</Link>
-            </div>
-
-
-
-            {/* Dropdown - Pages */}
+            {/* Pages Dropdown */}
             <div className={styles.dropdown}>
               <span>Pages ▾</span>
               <div className={styles.dropdownContent}>
@@ -85,25 +90,64 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Dropdown - Important Links */}
+            {/* Important Links Dropdown */}
             <div className={styles.dropdown}>
               <span>Important Links ▾</span>
               <div className={styles.dropdownContent}>
-                <a href="https://dghindia.gov.in/" target="_blank">Directorate General Of HydroCarbons</a>
-                <a href="https://india.gov.in/" target="_blank">National Portal Of India</a>
-                <a href="https://mopng.gov.in/en" target="_blank">Ministry Of Petroleum & Natural Gas</a>
-                <a href="https://www.oisd.gov.in/" target="_blank">Oil Industry Safety Directorate</a>
-                <a href="https://www.moef.gov.in/" target="_blank">MoEF & CC</a>
-                <a href="https://dgms.gov.in/" target="_blank">Directorate General Of Mines Saftey</a>
-                {/* <a href="https://ppac.org.in/" target="_blank">Petroleum Planning & Analysis Cell</a> */}
+                <a
+                  href="https://dghindia.gov.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Directorate General Of HydroCarbons
+                </a>
+                <a
+                  href="https://india.gov.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  National Portal Of India
+                </a>
+                <a
+                  href="https://mopng.gov.in/en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ministry Of Petroleum & Natural Gas
+                </a>
+                <a
+                  href="https://www.oisd.gov.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Oil Industry Safety Directorate
+                </a>
+                <a
+                  href="https://www.moef.gov.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  MoEF & CC
+                </a>
+                <a
+                  href="https://dgms.gov.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Directorate General Of Mines Safety
+                </a>
               </div>
             </div>
 
-            {/* Dropdown - Download */}
+            {/* Download Dropdown */}
             <div className={styles.dropdown}>
               <span>Download ▾</span>
               <div className={styles.dropdownContent}>
-                <a href="/DownloadDataPriceListPolicies" target="_blank">
+                <a
+                  href="/DownloadDataPriceListPolicies"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Data Price List & Policies
                 </a>
               </div>
@@ -112,7 +156,7 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </nav>
 
-          {/* Search + Login/Register */}
+          {/* Search + Auth */}
           <div className={styles.searchandlogin}>
             <div className={styles.searchBox}>
               <input
@@ -126,22 +170,16 @@ const Header = () => {
             <a
               href="https://enterprise-search.dsif.nicmeghrajprj1.ienergycloud.solutions/"
               target="_blank"
+              rel="noopener noreferrer"
               className={styles.loginBtn}
             >
               Log in
             </a>
 
-            <a
-              href="/registration"
-              target="_blank"
-              className={styles.registerBtn}
-            >
+            <Link to="/registration" className={styles.registerBtn}>
               Register
-            </a>
-
-            
+            </Link>
           </div>
-
         </div>
       </div>
     </header>

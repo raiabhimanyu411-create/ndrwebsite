@@ -65,11 +65,11 @@ export default function Footer() {
                             <div className={styles.social}>
                                 <span>Social</span>
                                 <div className={styles.icons}>
-                                    <a className={styles.medialinks} style={{ fontSize: "1.8rem" }} target="_blank" href="https://x.com/DghIndia">
+                                    <a className={styles.medialinks} style={{ fontSize: "1.8rem" }} target="_blank" rel="noopener noreferrer"href="https://x.com/DghIndia">
                                         <FaXTwitter className={styles.icon} />
                                     </a>
 
-                                    <a className={styles.medialinks} style={{ fontSize: "1.8rem" }} target="_blank" href="https://www.linkedin.com/in/dgh-india-826855120">
+                                    <a className={styles.medialinks} style={{ fontSize: "1.8rem" }} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dgh-india-826855120">
                                         <FaLinkedin className={styles.icon} />
                                     </a>
 
@@ -107,7 +107,7 @@ export default function Footer() {
 
 
                         <div className={styles.hauliLogoBox}>
-                            <img className={styles.hauliLogo} src={hl} alt="" />
+                            <img className={styles.hauliLogo} src={hl} alt="Halliburton Logo" />
                         </div>
                     </div>
 

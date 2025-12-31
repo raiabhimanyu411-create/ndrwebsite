@@ -29,9 +29,9 @@ const MobileSidebar = ({ isOpen, onClose }) => {
 
           <details>
             <summary>Important Links</summary>
-            <a className={styles.sidebarNavLink} href="https://dghindia.gov.in/" target="_blank">DGH</a>
-            <a className={styles.sidebarNavLink} href="https://india.gov.in/" target="_blank">India.gov.in</a>
-            <a className={styles.sidebarNavLink} href="https://mopng.gov.in/en" target="_blank">MoPNG</a>
+            <a className={styles.sidebarNavLink} href="https://dghindia.gov.in/" target="_blank" rel="noopener noreferrer">DGH</a>
+            <a className={styles.sidebarNavLink} href="https://india.gov.in/" target="_blank" rel="noopener noreferrer">India.gov.in</a>
+            <a className={styles.sidebarNavLink} href="https://mopng.gov.in/en" target="_blank" rel="noopener noreferrer">MoPNG</a>
           </details>
 
           <Link className={styles.sidebarNavLink} to="/contact" onClick={onClose}>Contact</Link>

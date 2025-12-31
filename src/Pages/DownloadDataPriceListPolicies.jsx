@@ -19,17 +19,17 @@ const DownloadDataPriceListPolicies = () => {
 
           <li>
             Please refer to the data pricing list for the data available for sale through NDR portal 
-            <a href="https://www.ndrdgh.gov.in/NDR/pdf/Price_List_for_NDR_Data_Sale-Final.pdf" className={styles.link}> NDR Data Sharing Rates </a>
+            <a href="https://www.ndrdgh.gov.in/NDR/pdf/Price_List_for_NDR_Data_Sale-Final.pdf" className={styles.link} rel="noopener noreferrer">  NDR Data Sharing Rates </a>
           </li>
 
           <li>
             Please refer to the refund and cancellation policy for the data ordered through NDR portal  
-            <a href="https://www.ndrdgh.gov.in/NDR/pdf/Refund_and_cancellation_policy.pdf" className={styles.link}> Refund & Cancellation Policy </a>
+            <a href="https://www.ndrdgh.gov.in/NDR/pdf/Refund_and_cancellation_policy.pdf" className={styles.link} rel="noopener noreferrer"> Refund & Cancellation Policy </a>
           </li>
 
           <li>
             E&P Data policy is for E&P data assimilation, disclosure, sharing, accessibility and dissemination through NATIONAL DATA REPOSITORY (NDR)  
-            <a href="https://www.ndrdgh.gov.in/NDR/pdf/data_policy.pdf" className={styles.link}> E&P Data Policy </a>
+            <a href="https://www.ndrdgh.gov.in/NDR/pdf/data_policy.pdf" className={styles.link} rel="noopener noreferrer"> E&P Data Policy </a>
           </li>
 
           <li>
@@ -39,19 +39,19 @@ const DownloadDataPriceListPolicies = () => {
 
           <li>
             Indian Cyber Crime Coordination Centre (I4C) under Cyber & Information Security (CIS) Division of the Ministry of Home Affairs, has prepared a basic manual to disseminate Cyber Hygiene Best Practices for the benefit of Industrial Bodies/General Public/Government Officials. This should not be considered as an exhaustive list of precautions for Cyber Hygiene but baseline precautions that are to be taken. Go through attached handbooks for your knowledge and safety not only at workplace but for your personal cyber security also.:  
-            <a href="https://www.ndrdgh.gov.in/NDR/pdf/Cyber-security-best-practices_ENGLISH.pdf" className={styles.link}> Cyber-Security Handbook – ENGLISH </a>  
+            <a href="https://www.ndrdgh.gov.in/NDR/pdf/Cyber-security-best-practices_ENGLISH.pdf" className={styles.link} rel="noopener noreferrer"> Cyber-Security Handbook – ENGLISH </a>  
             &  
             <a href="https://www.ndrdgh.gov.in/NDR/pdf/Cyber-security-best-practices_HINDI.pdf" className={styles.link}> Cyber-Security Handbook – HINDI </a>
           </li>
 
           <li>
             Latest Revised Guidelines for submission of E&P data of Nomination Fields by National Oil Companies (NOCs) to National Data Repository (NDR):  
-            <a href="https://www.ndrdgh.gov.in/NDR/pdf/Revised-DataSubmissionGuidelines.pdf" className={styles.link}> Revised Data Submission Guidelines </a>
+            <a href="https://www.ndrdgh.gov.in/NDR/pdf/Revised-DataSubmissionGuidelines.pdf" className={styles.link} rel="noopener noreferrer"> Revised Data Submission Guidelines </a>
           </li>
 
           <li>
            Old Guidelines for submission of E&P data of Nomination Fields by National Oil Companies (NOCs) to National Data Repository (NDR):  
-            <a href="https://www.ndrdgh.gov.in/NDR/pdf/DataSubmissionGuidelines.pdf" className={styles.link}> Old Data Submission Guidelines </a>
+            <a href="https://www.ndrdgh.gov.in/NDR/pdf/DataSubmissionGuidelines.pdf" className={styles.link} rel="noopener noreferrer"> Old Data Submission Guidelines </a>
           </li>
 
           <li>

@@ -4,6 +4,7 @@ import artille from "../assets/images/stats/araticle.svg";
 import map from "../assets/images/stats/map.svg";
 import noti from "../assets/images/stats/noti.svg";
 import mapi from "../assets/images/stats/india.png"
+import { Link } from "react-router-dom";
 
 export default function NewsSection() {
 
@@ -148,9 +149,11 @@ export default function NewsSection() {
                   <span className={styles.bullet} aria-hidden>
                     •
                   </span>
-                  <a className={styles.eventLink} href={e.href}>
+                  {/* <a className={styles.eventLink} href={e.href}>
                     {e.title}
-                  </a>
+                  </a> */}
+
+                  <Link to={e.href} className={styles.eventLink}>  {e.title} </Link>
                 </li>
               ))}
             </ul>

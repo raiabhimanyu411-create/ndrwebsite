@@ -12,7 +12,7 @@ const MobileSidebar = ({ isOpen, onClose }) => {
       <div className={`${styles.mobileSidebar} ${isOpen ? styles.show : ""}`}>
         <div className={styles.sidebarHeader}>
           {/* <span>Menu</span> */}
-          <FiX onClick={onClose} />
+          <FiX aria-label="close" onClick={onClose} />
         </div>
 
         <nav className={styles.sidebarNav}>

@@ -11,6 +11,10 @@ const Header = () => {
     document.cookie.includes("googtrans=/en/hi") ? "hi" : "en"
   );
 
+
+
+  
+
   // Govt-style language toggle (cookie + reload)
   const toggleLanguage = () => {
     if (lang === "en") {
